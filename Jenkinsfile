@@ -1,7 +1,7 @@
 
 node {
     stage('clone') {
-git clone 'https://github.com/kasice/practice_jenkins.git'
+git 'https://github.com/kasice/practice_jenkins.git'
 }
 stage('build') {
     sh lable: '', script: 'javac Main.java'
